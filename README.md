@@ -3,7 +3,7 @@ This is simple springboot web app to demonstrate deployment using docker.
 
 
 <br><br>
-###Create image with name *suzipats/dockerdemo* with tag *1.0.0*
+###Create image with name *suzipats/dockerdemo* with tag *b1*
 
 `docker build -t suzipats/dockerdemo:b1 /mnt/d/study/project/intellijcode/dockerdemo
 `
