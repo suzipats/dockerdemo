@@ -13,7 +13,11 @@ public class RestServiceApplication {
 
     public static void main(String[] args) {
         SpringApplication.run(RestServiceApplication.class, args);
-        logger.info("Application started successfully");
+        StringBuilder sb = new StringBuilder();
+        for(String arg : args){
+            sb.append(arg);
+        }
+        logger.info("Application {} started successfully with startup param-> {}", System.getenv("CONTAINER_NAME"), sb.toString());
     }
 
 }
